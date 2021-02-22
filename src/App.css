@@ -1,51 +1,52 @@
-.App {
-  text-align: center;
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  color: #2c3e50;
-  height: 100%;
-  display: flex;
-  font-size: 100%;
-}
-html, body {
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  background: #eee;
-}
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
+
+.todoListMain .header input {
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #FFF;
+  width: 165px;
 }
-.todo {
-  margin: auto;
-  background: #fff;
-  padding: 20px;
+.todoListMain .theList li {
+  color: #333;
+  background-color: rgba(255,255,255,.5);
+  padding: 15px;
+  margin-bottom: 15px;
   border-radius: 5px;
-  box-shadow: rgba(0, 0, 0, 0.3) 3px 3px 15px;
-}
-.title {
-  margin-top: 0;
+
+  transition: background-color .2s ease-out;
 }
 
-li {
+.todoListMain .theList li:hover {
+  background-color: pink;
+  cursor: pointer;
+}
+.todoListMain .header button {
+  padding: 10px;
+  font-size: 16px;
+  margin: 10px;
+  margin-right: 0px;
+  background-color: #0066FF;
+  color: #FFF;
+  border: 2px solid #0066FF;
+}
+.todoListMain .header button:hover {
+  background-color: #003399;
+  border: 2px solid #003399;
+  cursor: pointer;
+}
+.todoListMain .theList {
   list-style: none;
-  padding: 0px;
-  overflow: scroll;
-  overflow-x: hidden;
-  max-height: 15em; /* 1.5 x 10 */
-  overflow-y: auto;
+  padding-left: 0;
+  width: 250px;
 }
-.container {
-  display: inline-flex;
-  min-width: 100%;
+.todoListMain .theList li {
+  color: #333;
+  background-color: rgba(255,255,255,.5);
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  list-style: none;
 }
-.button-add {
-  margin-right: 20%;
-}
-.input-text {
-  min-width: 70%;
+ul.theList {
+  padding: 0;
 }
